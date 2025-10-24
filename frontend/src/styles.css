@@ -1,0 +1,97 @@
+/* Grocery Theme Colors */
+:root {
+  --grocery-primary: #28a745; /* Fresh green */
+  --grocery-secondary: #ffc107; /* Sunny yellow */
+  --grocery-accent: #fd7e14; /* Orange for fruits */
+  --grocery-dark: #343a40; /* Dark for text */
+  --grocery-light: #f8f9fa; /* Light background */
+  --grocery-success: #20c997; /* Teal for success */
+  --grocery-danger: #dc3545; /* Red for alerts */
+  --grocery-info: #17a2b8; /* Blue for info */
+  --grocery-warning: #ffc107; /* Yellow for warnings */
+}
+
+/* Override Bootstrap primary color */
+.navbar-dark.bg-primary {
+  background-color: var(--grocery-primary) !important;
+  border-color: var(--grocery-primary) !important;
+}
+
+.btn-success {
+  background-color: var(--grocery-accent) !important;
+  border-color: var(--grocery-accent) !important;
+}
+
+.btn-success:hover {
+  background-color: #e8680f !important; /* Darker orange */
+  border-color: #e8680f !important;
+}
+
+.card {
+  border-color: var(--grocery-light) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  background-color: var(--grocery-light) !important;
+  border-bottom-color: var(--grocery-primary) !important;
+}
+
+.table {
+  border-color: var(--grocery-light) !important;
+}
+
+.table thead th {
+  background-color: var(--grocery-primary) !important;
+  color: white !important;
+  border-color: var(--grocery-primary) !important;
+}
+
+.table tbody tr:hover {
+  background-color: var(--grocery-light) !important;
+}
+
+.alert-success {
+  background-color: var(--grocery-success) !important;
+  border-color: var(--grocery-success) !important;
+}
+
+.alert-danger {
+  background-color: var(--grocery-danger) !important;
+  border-color: var(--grocery-danger) !important;
+}
+
+.form-control:focus {
+  border-color: var(--grocery-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+/* Category icons styling */
+.category-icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+/* Product cards */
+.product-card {
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Admin dashboard */
+.admin-nav .nav-link.active {
+  background-color: var(--grocery-primary) !important;
+  border-color: var(--grocery-primary) !important;
+}
+
+.admin-nav .nav-link {
+  color: var(--grocery-dark) !important;
+}
+
+.admin-nav .nav-link.active {
+  color: white !important;
+}
